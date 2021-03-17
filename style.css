@@ -175,7 +175,7 @@
 
 .ex-12-button:hover .ex-12-bottom-white {
     animation-name: fluttuante-destra;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-direction: alternate;
 }
