@@ -108,7 +108,17 @@
 /* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotazione;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes rotazione {
+    100% { transform: rotate(-360deg); }
+}
+
+/* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
 }
