@@ -134,7 +134,7 @@
     100% { transform: rotate(0deg); }
 }
 
-
+/* Esercizio 12, 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -163,4 +163,27 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: fluttuante-sinistra;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: fluttuante-destra;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes fluttuante-sinistra {
+    50% { top: -10px; left: 68%; }
+}
+
+@keyframes fluttuante-destra {
+    50% { bottom: -10px; right: 68%; }
 }
